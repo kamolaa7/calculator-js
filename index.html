@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Add the following line to include the external styles.css file -->
+    <link rel="stylesheet" href="styles.css">
 
     <title>Calculator</title>
+
     <style>
         button { width: 50px; height: 50px; font-size: 18px; margin: 5px; }
     </style>
@@ -14,10 +14,26 @@
 <body>
     <input type="text" id="display" readonly>
     <br>
+
     <button onclick="appendNumber(7)">7</button>
     <button onclick="appendNumber(8)">8</button>
     <button onclick="appendNumber(9)">9</button>
+    <button onclick="setOperation('+')">/</button>
+    <br>
+    <button onclick="appendNumber(7)">4</button>
+    <button onclick="appendNumber(8)">5</button>
+    <button onclick="appendNumber(9)">6</button>
+    <button onclick="setOperation('+')">x</button>
+    <br>
+    <button onclick="appendNumber(7)">1</button>
+    <button onclick="appendNumber(8)">2</button>
+    <button onclick="appendNumber(9)">3</button>
     <button onclick="setOperation('+')">+</button>
+    <br>
+    <button onclick="appendNumber(7)">AC</button>
+    <button onclick="appendNumber(8)">DE</button>
+    <button onclick="appendNumber(9)">=</button>
+    <button onclick="setOperation('+')">-</button>
     
 </body>
 
