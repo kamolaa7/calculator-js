@@ -28,8 +28,10 @@ function setOperation(op) {
 
 // Function to clear the display
 function clearDisplay() {
-    // Do this
-
+    display.value = '';
+    firstNumber = '';
+    secondNumber = '';
+    operation = '';
 }
 
 
@@ -40,7 +42,21 @@ function calculate() {
     let num2 = parseFloat(secondNumber);
 
     // Do this
-
+    if (operation === '/') {
+        result = num1 / num2;
+    }
+    else if (operation === 'x') {
+        result = num1 * num2;
+    }
+    else if (operation === '+'){
+        result = num1 + num2;
+    }
+    else if (operation === '-'){
+        result = num1 - num2;
+    }
+    else{
+        result = 'ERROR'
+    }
     display.value = result;
     firstNumber = result.toString();
     secondNumber = '';
